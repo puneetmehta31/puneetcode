@@ -12,19 +12,7 @@ void drawBoard(const vector<char>& board) {
     cout << " " << board[6] << " | " << board[7] << " | " << board[8] << endl;
 }
 
-// Function to check if a player has won
-bool checkWin(const vector<char>& board, char player) {
-    // Check rows
-    for (int i = 0; i < 9; i += 3) {
-        if (board[i] == player && board[i + 1] == player && board[i + 2] == player)
-            return true;
-    }
 
-    // Check columns
-    for (int i = 0; i < 3; ++i) {
-        if (board[i] == player && board[i + 3] == player && board[i + 6] == player)
-            return true;
-    }
 
     // Check diagonals
     if (board[0] == player && board[4] == player && board[8] == player)
