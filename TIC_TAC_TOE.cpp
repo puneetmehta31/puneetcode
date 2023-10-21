@@ -29,7 +29,7 @@ void playGame() {
     char currentPlayer = 'X';
     int moves = 0;
 
-    while (moves < 9) {
+    while (moves < 12) {
         cout << "Current board:" << endl;
         drawBoard(board);
 
