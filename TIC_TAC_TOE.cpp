@@ -66,3 +66,6 @@ int main() {
     playGame();
     return 0;
 }
+
+
+// I have made some changers to the code 
